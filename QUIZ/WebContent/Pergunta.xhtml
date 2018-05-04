@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<title>Insert title here</title>
+<head>
+<style>
+body {
+	margin: 0 auto;
+	background-image: url("image/fundo.jpg");
+	background-repeat: no-repeat;
+	background: 100% 1080p;
+}
+
+.container {
+	width: 50%;
+	text-align: center;
+	background-color: rgba(52, 73, 94, 0.7);
+	border-radius: 4%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+.response {
+	width: 45%;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 150%;
+	margin-top: 6%;
+}
+
+.question {
+	color: white;
+	width: 100%;
+	height: 50%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-size: 150%;
+	font-style: normal;
+	font-family: cursive;
+}
+
+button {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: bolder;
+}
+</style>
+</head>
+<body>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h:dataTable styleClass="table table-striped" var="per" value="#{PerguntaMB.listap}">
+				<h:column>
+					<h:outputLabel value="#{per.pergunta}" />
+				</h:column>
+			</h:dataTable>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="response">
+		<div class="row">
+			<h:dataTable styleClass="table table-striped" var="per" value="#{PerguntaMB.listap}">
+				<h:column>
+					<h:commandButton styleClass="btn btn-default" value="#{per.resposta}" />
+				</h:column>
+			</h:dataTable>
+
+		</div>
+	</div>
+
+</body>
+</html>

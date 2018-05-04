@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:p="http://primefaces.org/ui">
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<style>
+body{
+	margin : 0 auto;
+	background-image: url("image/fundo.jpg");
+	background-repeat: no-repeat;
+	background: 100% 720p;
+}
+
+
+
+.container{
+	width: 30%;
+	text-align: center;
+	background-color: rgba(52,73,94,0.7);
+	border-radius: 4%;
+	margin: 0 auto;
+	margin-top: 12%;
+	
+}
+
+input{
+	height: 45%;
+	width: 70%;
+	font-size: 120%;
+	margin-bottom: 5%;
+}
+.container img{
+	margin-top: 5%;
+	margin-bottom: 7%;
+	max-width:40%;
+    max-height:40%;
+    width: auto;
+    height: auto;
+}
+
+button {
+	width: 70%;
+	margin-top: 1%;
+	margin-bottom: 10%;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: bolder;
+}
+a{
+	width : 5%;	
+	margin-top: 20%;
+	margin-bottom: 10%;
+	background-color: rgba(52,73,94,0.7);	
+	}
+	
+</style>
+
+
+<title>Login</title>
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-xs-30 col-sm-30	 col-md-12 col-lg-12">
+			<div class="container">
+				<img src="image/usuario.png"/>
+				<form action="">
+				
+					<!-- txt de nome e senha -->
+					<div align="center"  >
+						<input type="text" id="nome" name="nome" placeholder="    NOME     " />
+					</div>
+					
+					<div>
+						<input type="text" id="nome" name="nome" placeholder="   SENHA    "/>
+					</div>
+					
+					<!-- botão de login -->
+					<div>
+						<button  type="button" id="acessar" name="acessar"
+							class="btn btn-warning">Acessar</button>
+					</div>
+					<div>
+					<a>Esqueci minha senha</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
